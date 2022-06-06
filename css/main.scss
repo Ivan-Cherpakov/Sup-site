@@ -1,0 +1,86 @@
+body {
+    margin: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/main.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    z-index: -1;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+    text-transform: uppercase;
+    background: white;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 8em;
+
+        a {
+            color: black;
+            padding: .75em 2em;
+            font-size: 1.1rem;
+            display: block;
+
+            &:hover {
+                background: rgb(235, 235, 235);
+            }
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    svg {
+        width: 3em;
+        margin-top: -.6em;
+        cursor: pointer;
+        fill: white;
+
+    }
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 2em;
+    line-height: 5rem;
+    text-align: center; 
+}
+
+.subhead {
+    font-size: 4.6rem;
+    margin-top: 2em;
+    line-height: 5rem;
+    text-align: center; 
+    color: white;
+}
+
+.hero {
+    color: white;
+}
