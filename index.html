@@ -14,11 +14,12 @@
     <div class="hero-img"></div>
     <div class="wrapper">
         <header>
+            
             <nav>
 
                 <svg class="close" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99997 8.707L11.646 12.354L12.354 11.647L8.70697 8L12.354 4.354L11.647 3.646L7.99997 7.293L4.35397 3.646L3.64697 4.354L7.29297 8L3.64697 11.646L4.35397 12.354L7.99997 8.707Z" fill="black"/>
-                    </svg>
+                </svg>
                     
 
                 <ul>
@@ -35,7 +36,7 @@
 
             </nav>
 
-            <svg id="menu" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
+            <svg class="menu" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" width="24.8829" height="3.12244" rx="1.56122" />
             <rect x="0.5" y="7.49384" width="19.3548" height="3.12244" rx="1.56122" />
             <rect x="0.5" y="14.9877" width="22.3097" height="3.12244" rx="1.56122" /></svg>
@@ -62,5 +63,22 @@
         </section>
 
     </div>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const close = document.querySelector('.close');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', () => {
+          nav.classList.add('open-nav')  
+        })
+
+        close.addEventListener('click', () => {
+          nav.classList.remove('open-nav')  
+        })
+
+
+
+    </script>    
 </body>
 </html>
